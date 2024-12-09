@@ -85,6 +85,6 @@ def PostDeleteView(request, pk):
     try:
         post = Post.objects.get(id=pk)
         post.delete()
-        return Response(status=204, data={"detail": "Post deleted successfully"})
+        return Response(status=204, data={})
     except Post.DoesNotExist:
         return Response(status=404, data={"detail": "Post not found", "status": 404})

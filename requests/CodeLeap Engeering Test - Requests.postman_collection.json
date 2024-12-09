@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "5bd2c0d7-ad71-4631-a1cb-75235786c030",
+		"name": "CodeLeap Engeering Test - Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11799179"
+	},
+	"item": [
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"113\",\r\n    \"title\": \"String\",\r\n    \"content\": \"content data\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/list"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"title updated\",\r\n    \"content\": \"content updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/update/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/delete/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/detail/1"
+			},
+			"response": []
+		}
+	]
+}
