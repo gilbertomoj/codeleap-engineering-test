@@ -3,17 +3,13 @@
 
 <h1 align="center" style="font-weight: bold;"> CodeLeap Engineering Test 💻</h1>
 
-![express][PYTHON_BADGE]
-![nest][DJANGO_BADGE]
+![python][PYTHON_BADGE]
+![django][DJANGO_BADGE]
 
 <p align="center">
  <a href="#started">Getting Started</a> • 
   <a href="#routes">API Endpoints</a> •
  <a href="#contribute">Contribute</a>
-</p>
-
-<p align="center">
-  <b>Simple description of what your project do or how to use it.</b>
 </p>
 
 <h2 id="started">🚀 Getting started</h2>
