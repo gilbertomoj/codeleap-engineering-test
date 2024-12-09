@@ -5,5 +5,5 @@ from django.db import models
 class Post(models.Model):
     title = models.CharField(max_length=30)
     content = models.TextField()
-    username = models.CharField(max_length=30)
+    username = models.CharField(max_length=30, unique=True)
     created_datetime = models.DateTimeField(auto_now_add=True)
