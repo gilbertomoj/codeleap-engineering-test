@@ -20,7 +20,7 @@
 
 <h3>Prerequisites</h3>
 
-Here you list all prerequisites necessary for running your project.
+Here you list all prerequisites necessary for running the project.
 
 - [Python](https://www.python.org)
 - [Django](https://www.djangoproject.com)
@@ -30,7 +30,7 @@ Here you list all prerequisites necessary for running your project.
 Clone this repository to your local machine:
 
 ```bash
-git clone your-project-url-in-github
+git clone https://github.com/gilbertomoj/codeleap-engineering-test
 ```
 
 <h3>Setting Up the Project</h3>
