@@ -9,6 +9,7 @@
 <p align="center">
  <a href="#started">Getting Started</a> • 
   <a href="#routes">API Endpoints</a> •
+ <a href="#testing">Testing</a> • 
  <a href="#contribute">Contribute</a>
 </p>
 
@@ -29,7 +30,7 @@ Clone this repository to your local machine:
 git clone https://github.com/gilbertomoj/codeleap-engineering-test
 ```
 
-<h3>Setting Up the Project</h3>
+<h3 id="setting">Setting Up the Project</h3>
 
 1. Navigate to the project directory
 ```bash
@@ -57,6 +58,22 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ``````
+
+<h2 id="setting-docker">Setting Up with Docker</h2>
+1. Configura se o docker está instalado na sua maquina 
+```bash
+docker --version
+``````
+2. Com o docker instalado crie a imagem executando
+```bash
+docker build -t codeleap_test .
+``````
+
+3. Para rodar o container
+```bash
+docker run -p 8000:8000 codeleap_test
+``````
+
 <h2 id="routes">📍 API Endpoints</h2>
 
 Here is a list of the main API routes, along with expected request and response bodies.
@@ -154,3 +171,22 @@ Deletes a post by ID.
 ```json
 {}
 ```
+<h2 id="testing">Testing</h2>
+1. **Run the Test Command**  
+   Inside the project root directory, open the terminal and execute:  
+   ```bash
+   python manage.py test
+   ```
+    If everything is set up correctly, the following message should appear in your terminal.
+   ````bash
+    Found 5 test(s).
+    Creating test database for alias 'default'...
+    System check identified no issues (0 silenced).
+    .....
+    ----------------------------------------------------------------------
+    Ran 5 tests in 0.018s
+    
+    OK
+    Destroying test database for alias 'default'...
+
+   ````
