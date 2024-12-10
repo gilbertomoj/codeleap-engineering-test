@@ -4,7 +4,7 @@
 <h1 align="center" style="font-weight: bold;"> CodeLeap Engineering Test 💻</h1>
 
 ![python][PYTHON_BADGE]
-![django][DJANGO_BADGE]
+![nest][DJANGO_BADGE]
 
 <p align="center">
  <a href="#started">Getting Started</a> • 
